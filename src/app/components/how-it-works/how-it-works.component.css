@@ -1,0 +1,116 @@
+#how-it-works {
+    margin-top: 10rem;
+}
+
+#how-it-works h2 {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+
+#how-it-works p {
+    font-size: 0.9rem;
+}
+
+#how-it-works svg {
+    width: 4rem;
+}
+
+#how-it-works div:nth-child(2) article:nth-child(5) svg {
+    width: 3rem;
+}
+
+#how-it-works .arrow-down {
+    width: 1.5rem;
+    margin: 1rem 0;
+}
+
+#info {
+    margin-top: 8rem;
+}
+
+
+#info h3 {
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#info p {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.learn-more a {
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+
+@media (min-width: 1024px) {
+
+#how-it-works {
+    margin-top: 15rem;
+}
+
+#how-it-works h2 {
+    margin-bottom: 6rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.3rem;
+}
+
+#how-it-works svg {
+    width: 5rem;
+}
+
+#how-it-works div:nth-child(2) article:nth-child(5) svg {
+    width: 4rem;
+}
+
+
+#how-it-works p {
+    font-size: 1rem;
+}
+
+#how-it-works .arrow-right {
+    width: 2.5rem;
+    margin: 0rem 0;
+}
+
+#info {
+    margin-top: 15rem;
+}
+
+#info h3 {
+    color: var(--main-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+text-decoration: underline;
+}
+
+#info p {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.learn-more a {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+}

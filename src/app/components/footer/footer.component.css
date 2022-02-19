@@ -1,0 +1,100 @@
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    background-image: url("/assets/images/wave_footer_mob.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-color: rgba(211, 211, 211, 0.1);
+}
+
+.logo-footer {
+    width: 4rem;
+    height: 2.5rem;
+}
+
+footer div:first-child  div{
+    font-size: 0.5rem;  
+}
+
+footer svg:first-child {
+    width: 8rem;
+    height: 4rem;
+}
+
+footer .nav-link {
+    color: black;
+    font-size: 0.7rem;
+}
+
+footer .redes-sociales svg {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+footer div:nth-child(2) ul li:nth-child(6) a:hover {
+    color: white;
+}
+
+footer div:nth-child(3) ul li a:active {
+    color: white;
+ }
+
+
+
+
+
+@media (min-width: 1024px) {
+
+    footer {
+        margin-top: 0rem;
+        background-image: url("/assets/images/wave_footer.svg");
+        background-repeat: no-repeat;
+        background-position-y: bottom; 
+    }
+    
+    .logo-footer {
+        width: 5rem;
+        height: 3rem;
+    }
+    
+    footer div:first-child  div{
+        font-size: 0.6rem;  
+    }
+    
+    
+    footer svg:first-child {
+        width: 10rem;
+        height: 5rem;
+    }
+    
+    footer .nav-link {
+        color: black;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    footer .nav-link:hover {
+        color: var(--main-color);
+    }
+    
+    footer .redes-sociales svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    footer div:nth-child(2) ul li:nth-child(6) a:hover {
+        color: white;
+    }
+    footer div:nth-child(3) ul li:nth-child(3) a:hover {
+        color: white;
+    }
+    footer div:nth-child(3) ul li:nth-child(4) a:hover {
+       color: white;
+    }
+    
+    
+    
+}

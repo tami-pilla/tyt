@@ -1,0 +1,125 @@
+#work-w-us {
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+} 
+
+#work-w-us h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+#work-w-us p {
+    font-size: 0.9rem;
+    margin: 1.5rem 0rem;
+    line-height: 1.5rem;
+}
+
+#work-w-us p span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+#work-w-us .open-modal {
+    color: white;
+    background-color: var(--main-color);
+    border: 3px solid var(--main-color);
+    padding: 0.3rem 1.3rem;
+    letter-spacing: 0.1rem;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+}
+
+#work-w-us .open-modal:hover {
+    color: var(--main-color);
+    background-color: white; 
+}
+
+#work-w-us .btn-back-top {
+    margin-top: 7rem;
+}
+
+
+#work-w-us .btn-back-top a svg {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--main-color);
+    padding: 0.5rem;
+    transition: 0.4s;
+}
+
+
+#work-w-us .bbt{
+   font-size: 0.8rem;
+}
+
+
+
+@media (min-width: 1024px) {
+
+
+#work-w-us {
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+} 
+
+#work-w-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 8rem;
+}
+
+#work-w-us p {
+    font-size: 1.2rem;
+    margin: 2rem 0rem;
+    line-height: 2.2rem;
+}
+
+#work-w-us p span {
+    color: var(--main-color);
+}
+
+#work-w-us .open-modal {
+    color: white;
+    background-color: var(--main-color);
+    border: 3px solid var(--main-color);
+    padding: 0.5rem 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 1.2rem;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+#work-w-us .open-modal:hover {
+    color: var(--main-color);
+    background-color: white; 
+}
+
+
+
+#work-w-us .btn-back-top {
+    margin-top: 8rem;
+}
+
+
+#work-w-us .btn-back-top a svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--main-color);
+    padding: 0.5rem;
+    transition: 0.4s;
+}
+
+#work-w-us .btn-back-top a svg:hover {
+    transform: scale(1.1);
+}
+
+
+#work-w-us .bbt{
+   font-size: 0.9rem;
+}
+
+}

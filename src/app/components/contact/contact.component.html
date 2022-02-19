@@ -1,0 +1,79 @@
+<section class="container-fluid" id="contact">
+    <article class="row d-flex flex-column align-items-center justify-content-center">
+
+        <div class="col-12 col-lg-5 d-flex flex-column align-items-center justify-content-center">
+
+            <h2 class="text-center font-1">Any questions?</h2>
+
+            <p class="text-center font-2">If you have any doubts about how T&T works, send us a message and we will
+                reach you in the next <span>24 hours.</span></p>
+
+            <a (click)="openModal()" class="open-modal shadow text-decoration-none fw-bold font-1" role="button">Contact us</a>
+
+            
+            <div *ngIf="modalSwitch == true">
+                <app-modal-contact></app-modal-contact>
+            </div>
+
+           
+            <!-- CONTACT MODAL
+            <div *ngIf="modalContact == true" class="modal-container" id="contact-modal">
+
+                <div class="modal-body d-flex flex-column align-items-center">
+
+                    <a (click)="closeModalContact()" class="btn-modal-cerrar">
+                        <svg class="svg-modal-cerrar" viewBox="0 0 311 311.07733" width="311pt"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0" />
+                            <path
+                                d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0" />
+                        </svg>
+                    </a>
+
+                    <div>
+                        <h6 class="font-1">CONTACT US</h6>
+                    </div>
+
+                    <div>
+                        <form action="" method="POST" class="contact-form font-2">
+                            <fieldset>
+
+                                <div class="d-flex flex-column flex-lg-row">
+                                    <div class="d-flex flex-column mt-4 mt-lg-0 me-lg-3 ">
+                                        <label for="name-contact" class="fw-bold">Name:</label>
+                                        <input type="text" id="name-contact" required>
+                                    </div>
+
+                                    <div class="d-flex flex-column mt-4 mt-lg-0">
+                                        <label for="email-contact" class="fw-bold">E-mail:</label>
+                                        <input type="email" id="email-contact" required>
+                                    </div>
+                                </div>
+
+
+                                <div class="d-flex flex-column mt-4 mt-lg-4">
+                                    <label for="subject-contact" class="fw-bold">Subject:</label>
+                                    <input type="text" id="subject-contact" required>
+                                </div>
+
+
+                                <div class="mt-4 mt-lg-4 d-flex flex-column">
+                                    <label for="message-contact" class="fw-bold">Message:</label>
+                                    <textarea name="message-contact" id="message-contact"></textarea>
+                                </div>
+
+                                <div class="mt-4 mt-lg-4 d-flex justify-content-center align-items-center">
+                                    <input type="submit" id="submit-contact" class="shadow font-1 rounded-pill"
+                                        value="Send">
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </article>
+</section>

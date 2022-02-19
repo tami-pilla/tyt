@@ -1,0 +1,35 @@
+<section class="container-fluid" id="work-w-us">
+    <article class="row d-flex flex-column align-items-center justify-content-center">
+
+        <div class="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-center">
+
+            <h2 class="text-center font-1">Do you want to work<br> with us?</h2>
+
+            <p class="text-center font-2">If you want to be part of our <span>team,</span> please complete the following
+                form and we'll get in touch:</p>
+
+            <a class="open-modal shadow text-decoration-none fw-bold font-1" role="button"
+                (click)="openModal()">Complete Form</a>
+
+            <div *ngIf="modalSwitch == true">
+                <app-modal-work></app-modal-work>
+            </div>
+
+        </div>
+    </article>
+
+    <div class="col-12 d-flex-column justify-content-center align-items-center text-center btn-back-top">
+
+        <a href="#home" class="shadow text-decoration-none font-2 fw-bold " role="button">
+            <svg class="rounded-circle" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24"
+                width="24px" fill="#000000">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z" />
+            </svg>
+        </a>
+
+        <p class="font-1 fw-bold bbt">Back to Top</p>
+
+    </div>
+
+</section>

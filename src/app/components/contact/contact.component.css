@@ -1,0 +1,84 @@
+
+    #contact {
+        margin-top: 10rem;
+    }
+
+    #contact h2 {
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+
+    #contact p {
+        font-size: 0.9rem;
+        margin: 1rem 0rem;
+        line-height: 1.5rem;
+    }
+
+    #contact p span {
+        color: var(--main-color);
+        font-weight: bold;
+    }
+
+    #contact .open-modal {
+        color: white;
+        background-color: var(--main-color);
+        border: 3px solid var(--main-color);
+        padding: 0.3rem 1.3rem;
+        letter-spacing: 0.1rem;
+        font-size: 0.9rem;
+        border-radius: 10px;
+        transition: 0.5s;
+
+    }
+
+    #contact .open-modal:hover {
+        color: var(--main-color);
+        background-color: white; 
+    }
+
+
+
+
+@media (min-width: 1024px) { 
+
+    #contact {
+        margin-top: 4rem;
+        /* margin-bottom: 12rem; */
+    }
+
+    #contact h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-top: 12rem;
+    }
+
+    #contact p {
+        font-size: 1.2rem;
+        margin: 2rem 0rem;
+        line-height: 2.2rem;
+    }
+
+    #contact p span {
+        color: var(--main-color);
+    }
+
+    #contact .open-modal {
+        color: white;
+        background-color: var(--main-color);
+        border: 3px solid var(--main-color);
+        padding: 0.5rem 1.5rem;
+        letter-spacing: 0.1rem;
+        font-weight: 1.2rem;
+        border-radius: 10px;
+        transition: 0.5s;
+
+    }
+
+    #contact .open-modal:hover {
+        color: var(--main-color);
+        background-color: white; 
+    }
+
+
+    
+}

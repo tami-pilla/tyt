@@ -1,0 +1,267 @@
+<header class="container-fluid shadow-sm">
+
+  <div class="row d-flex" id="header" >
+
+    <div class="col-5 col-lg-4 d-flex justify-content-lg-center align-items-center">
+      <a class="logo d-flex align-items-center" routerLink="/home">
+        <img src="/assets/images/logo-header2a.png">
+      </a>
+    </div>
+
+    <div class="col-7  d-flex justify-content-end  align-items-center d-lg-none">
+      <a class="btn-menu text-decoration-none" role="button" id="btn-abrir-menu" (click)="toggleMenu()">
+        <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewBox="0 0 32 32" xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_" />
+          <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_" />
+          <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_" />
+        </svg>
+      </a>
+    </div> 
+
+    
+    <nav class="col-12 col-lg-8  d-flex flex-column d-lg-flex flex-lg-row  justify-content-lg-center  align-items-lg-center">
+      <ul class="nav font-2  d-lg-flex flex-lg-row"  [class.menu-show]="openMenu" id="menu">
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">HOME</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-decoration-none" routerLink='/services'>SERVICES</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">MAKE YOUR ORDER</a>
+        </li>
+       
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/contact'>CONTACT</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/work-with-us'>WORK WITH US</a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="">COMMUNITY</a>
+        </li>
+
+      </ul>
+    </nav>
+  
+  </div>
+
+</header>
+
+
+
+<section class="container-fluid  d-flex flex-column align-items-center" id="order-form">
+
+    <div class="col-12 d-flex justify-content-center">
+      <h2 class="text-center  fw-bold font-2 animacion-ph">Let's get started!</h2>
+   </div>
+  
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-lg-11 d-flex justify-content-center">
+       <img class="order-img" src="/assets/images/2-people.jpeg" alt="img">
+     </div>
+   </div>
+  
+  
+      <article class="col-12 col-lg-12 mt-5 mt-lg-5 d-flex flex-column align-items-center">
+  
+          <p class="font-2 text-center">Complete the form below to iniciate your order.</p>
+          <p class="font-2 text-center"> We will send you the information to make the payment.</p>
+  
+  
+          <div class="order-form-img d-flex justify-content-center my-3 mt-lg-5 mb-lg-5 animacion-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="80" viewBox="0 0 64 80">
+              <path id="arrowdown" d="M44,12V74.344L22.828,53.172a4,4,0,0,0-5.656,5.657l28,28a4,4,0,0,0,5.656,0l28-28a4,4,0,1,0-5.656-5.657L52,74.344V12a4,4,0,0,0-8,0Z" transform="translate(-16 -8)" fill="#FF8C00"/>
+            </svg> 
+          </div>
+  
+  
+          <form action="" method="POST" class="font-2  d-flex flex-column align-items-center mt-lg-5">
+              <fieldset>
+  
+                <!-- personal info -->
+                  <div class="mt-5 mt-lg-5">
+                      <legend class="fw-bold font-1">PERSONAL INFORMATION:</legend>
+  
+                      <div class="d-flex flex-column flex-lg-row">
+                        <div class="d-flex flex-column me-lg-5">
+                          <label for="name" class="fw-bold mt-lg-3">Name:</label>
+                          <input type="text" id="name" required>
+                        </div>
+  
+                         <div class="d-flex flex-column mt-4 mt-lg-0 me-lg-5">
+                          <label for="last-name" class="fw-bold mt-lg-3">Last Name:</label>
+                          <input type="text" id="last-name" required>
+                        </div>
+                      </div>
+                  </div>
+  
+                  
+                  <div class="mt-4 mt-lg-5">
+                    <div class="d-flex flex-column flex-lg-row">
+                      <div class="d-flex flex-column me-lg-5">
+                        <label for="email" class="fw-bold">E-mail:</label>
+                        <input type="email" id="email" required>
+                      </div>
+  
+                       <div class="d-flex flex-column mt-4 mt-lg-0 me-lg-5">
+                        <label for="phone" class="fw-bold">Phone Number:</label>
+                        <input type="text" id="phone" required>
+                      </div>
+                    </div>
+                 </div>
+  
+                 <!-- location -->
+                  <div class="mt-4 mt-lg-5">
+  
+                    <div class="d-flex flex-column flex-lg-row">
+                      <div class="d-flex flex-column me-lg-5">
+                          <label for="country" class="fw-bold">Country:</label>
+                          <input type="text" id="country" required>
+                      </div>
+  
+                      <div class="d-flex flex-column mt-4 mt-lg-0 me-lg-5">
+                        <label for="city" class="fw-bold">City:</label>
+                        <input type="text" id="city" required>
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                  <!-- services -->
+                  <div class="mt-5 mt-lg-5">
+                      <legend class="fw-bold font-1">WHAT SERVICE DO YOU NEED?</legend>
+  
+                      <div class="d-flex flex-column">
+                        <div>
+                            <input type="radio" id="audiovisual-translation" name="order-option" value="audiovisual-translation">
+                            <label for="audiovisual-translation" class="services mt-3 mt-lg-2">Audiovisual Translation</label>
+                         </div>
+
+                         <div>
+                            <input type="radio" id="specialized-translation" name="order-option" value="specialized-translation">
+                            <label for="specialized-translation" class="services mt-3 mt-lg-2">Specialized Translation</label>
+                         </div>
+
+                         <div>
+                            <input type="radio" id="videogame-translation" name="order-option" value="videogame-translation">
+                            <label for="videogame-translation" class="services mt-3 mt-lg-2">Videogame Translation</label>
+                         </div>
+
+                          <div>
+                             <input type="radio" id="subtitles" name="order-option" value="subtitles">
+                             <label for="subtitles" class="services mt-3 mt-lg-2">Subtitles</label>
+                          </div>
+  
+                          <div>
+                             <input type="radio" id="transcription" name="order-option" value="transcription">
+                             <label for="transcription" class="services mt-3 mt-lg-2">Transcription</label>
+                          </div>
+                      </div>
+                  </div>
+  
+                   <!-- project area -->
+                  <div class="mt-5 mt-lg-5">
+                    <legend class="fw-bold font-1">WHAT IS YOUR PROJECT'S AREA?</legend>
+  
+                    <div class="d-flex flex-column">
+                        <div>
+                           <input type="checkbox" id="academic" name="project-area" value="academic">
+                           <label for="academic" class="services">Academic</label>
+                        </div>
+  
+                        <div>
+                           <input type="checkbox" id="legal" name="project-area" value="legal">
+                           <label for="legal" class="services mt-2 mt-lg-0">Legal</label>
+                        </div>
+  
+                        <div>
+                          <input type="checkbox" id="technology" name="project-area" value="technology">
+                          <label for="technology" class="services mt-2 mt-lg-0">Technology</label>
+                       </div>
+  
+                       <div>
+                        <input type="checkbox" id="business" name="project-area" value="business">
+                        <label for="business" class="services mt-2 mt-lg-0">Business</label>
+                     </div>
+  
+                     <div>
+                      <input type="checkbox" id="literature" name="project-area" value="literature">
+                      <label for="literature" class="services mt-2 mt-lg-0">Literature</label>
+                   </div>
+
+                   <div>
+                    <input type="checkbox" id="other" name="project-area" value="other">
+                    <label for="other" class="services mt-2 mt-lg-0">Other</label>
+                 </div>
+                    </div>
+                </div>
+  
+                <!-- language -->
+                  <div class="mt-5 mt-lg-5">
+                      <legend class="fw-bold font-1">LANGUAGES:</legend>
+  
+                      <div class="d-flex flex-column flex-lg-row">
+                          <div class="d-flex flex-column">
+                              <label for="language-from" class="fw-bold mb-2 mb-lg-2">From:</label>
+                               <select id="language-from" name="lenguage">
+                                  <option value="...">...</option>
+                                  <option value="english">English</option>
+                                  <option value="spanish">Spanish</option>
+                                  <option value="french">French</option>
+                                  <option value="deutsch">Deutsch</option>
+                                  <option value="italian">Italian</option>
+                                  <option value="portuguese">Portuguese</option>
+                               </select>       
+                          </div>
+  
+  
+                          <div class="mt-4 mt-lg-0 ms-lg-4 ms-lg-5 d-flex flex-column">
+                              <label for="language-to" class="fw-bold mb-2 mb-lg-2">To:</label>
+                               <select id="language-to" name="lenguage">
+                                  <option value="">...</option>
+                                  <option value="english">English</option>
+                                  <option value="spanish">Spanish</option>
+                                  <option value="french">French</option>
+                                  <option value="deutsch">Deutsch</option>
+                                  <option value="italian">Italian</option>
+                                  <option value="portuguese">Portuguese</option>
+                               </select>       
+                          </div>
+                      </div>
+                  </div>
+  
+                  <div class="mt-5 mt-lg-5">
+                      <input type="file"  name="filename" required hidden>
+                      <label for="upload-files" class="choose-file shadow mt-lg-3 font-1" id="upload-files">Upload your file</label>
+                      <span id="file-chosen" class="font-1">No file chosen</span>
+                  </div>
+  
+                  <div class="mt-5 mt-lg-5">
+                      <legend class="fw-bold font-1 mt-lg-3">ABOUT YOUR PROJECT:<span>(optional)</span></legend>
+                      <textarea name="message" id="message"></textarea>
+                  </div>
+  
+                  <div class="mt-4 mt-lg-4">
+                      <input type="submit" id="submit" class="shadow font-1" value="Submit">
+                  </div>
+  
+              </fieldset>
+          </form>
+  
+      </article>
+  </section>
+
+
+  <app-footer></app-footer>
+  
+    

@@ -1,0 +1,106 @@
+header {
+    position: fixed;
+    z-index: 200;
+    transition: 0.5s;
+    background-color: white;
+    box-shadow: 4px 3px 3px rgb(223, 223, 223);
+    padding: 0.4rem;
+}
+
+header .logo img {
+    width: 4.5rem;
+    height: 2rem;
+}
+
+header nav {
+    background-image: url("/assets/images/wave-service.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom ;
+}
+
+header .nav-link {
+    margin: 0rem 0rem 1rem 0;
+    color: black;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+header #menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    margin-top: 0.5rem;
+    padding-top: 4rem;
+    border-top: 1px solid lightgray;
+ 
+}
+
+header #menu.menu-show {
+    display: flex;
+}
+
+
+header .btn-menu svg {
+fill: black;
+width: 1.5rem;
+margin-right: 0.5rem;
+}
+
+
+
+@media (min-width: 1024px) {
+
+header {
+    position: fixed;
+    z-index: 100;
+    padding-top: 0.3rem;
+    height: 4rem;
+    transition: 0.5s;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.header_scroll {
+    background-color: white;
+    box-shadow: 4px 3px 3px rgb(223, 223, 223);
+}
+
+header nav {
+    background-color: transparent;
+    background-image: none;
+ 
+}
+
+header .logo img {
+    width: 7rem;
+    height: 3rem;
+}
+
+header .nav-link {
+    margin: 0rem 1.5rem 0 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header .nav-link:hover {
+    transform: scale(1.1);
+}
+
+header #menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 4vh;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    border-top: none;
+    background-color: transparent;
+   
+}
+
+}

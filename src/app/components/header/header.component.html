@@ -1,0 +1,73 @@
+<header class="container-fluid" #header [class.header_scroll]="header_animation">
+
+
+  <div class="row d-flex" id="header" >
+
+    <div class="col-5 col-lg-4 d-flex justify-content-lg-center align-items-center">
+      <a class="logo d-flex align-items-center">
+        <img  src="/assets/images/logo-header2a.png">
+      </a>
+    </div>
+
+    <div class="col-7  d-flex justify-content-end  align-items-center d-lg-none">
+      <a class="btn-menu text-decoration-none" role="button" id="btn-abrir-menu" (click)="toggleMenu()">
+        <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewBox="0 0 32 32" xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_" />
+          <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_" />
+          <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_" />
+        </svg>
+      </a>
+    </div> 
+
+    
+    <nav class="col-12 col-lg-8  d-flex flex-column d-lg-flex flex-lg-row  justify-content-lg-center  align-items-lg-center">
+      <ul class="nav font-2  d-lg-flex flex-lg-row" [class.menu-show]="openMenu" id="menu">
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">HOME</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-decoration-none" routerLink='/services'>SERVICES</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/make-order'>MAKE YOUR ORDER</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/contact'>CONTACT</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/work-with-us'>WORK WITH US</a>
+        </li>
+
+     
+
+        <li class="nav-item">
+          <a class="nav-link" href="">COMMUNITY</a>
+        </li>
+
+      </ul>
+    </nav>
+
+  
+
+
+  </div>
+
+
+
+</header>
+
+
+
+<app-home></app-home> 
+<app-how-it-works></app-how-it-works> 
+<app-customers></app-customers>
+<app-contact></app-contact>
+<app-work-w-us></app-work-w-us>
+<app-footer></app-footer>

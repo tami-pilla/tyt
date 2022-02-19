@@ -1,0 +1,269 @@
+header {
+    position: fixed;
+    z-index: 200;
+    background-color: white;
+    padding: 0.4rem;
+}
+
+header .logo img {
+    width: 4.5rem;
+    height: 2rem;
+}
+
+header nav {
+    background-image: url("/assets/images/wave-service.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom ;
+}
+
+header .nav-link {
+    margin: 0rem 0rem 1rem 0;
+    color: black;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+header #menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    margin-top: 0.5rem;
+    padding-top: 4rem;
+    border-top: 1px solid lightgray;
+ 
+}
+
+header #menu.menu-show {
+    display: flex;
+}
+
+
+header .btn-menu svg {
+fill: black;
+width: 1.5rem;
+margin-right: 0.5rem;
+}
+
+#contact {
+    margin-bottom: 12rem;
+}
+
+#contact article .contact-body {
+    margin-top: 6rem;
+}
+
+
+#contact article div div:first-child h6 {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+    font-weight: bold
+}
+
+#contact article div:first-child p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+#contact article div:first-child span {
+   color: var(--main-color);
+   font-weight: bold;
+}
+
+#contact img {
+    width: 85vw;
+    margin: 2rem 0;
+}
+
+#contact form {
+margin-top: 2rem;
+ padding: 2rem 1rem 2rem 1rem;
+ box-shadow: 4px 4px 4px rgb(228, 228, 228);
+}
+
+
+#contact form fieldset label {
+font-size: 0.7rem;
+color: black;
+margin-bottom: 0.3rem;
+}
+
+#contact form fieldset input {
+background-color: rgba(255, 140, 0, 0.1);
+border: none;
+border-radius: 4px;
+height: 1.6rem;
+outline: transparent;
+font-size: 0.8rem;
+width: 17rem;
+
+}
+
+#contact form fieldset textarea {
+background-color: rgba(255, 140, 0, 0.1);
+border: none;
+border-radius: 4px;
+padding-left: 1rem;
+width: 17rem;
+height: 6rem;
+resize: none;
+outline: transparent;
+}
+
+#contact form fieldset div:nth-child(4) input {
+background-color: var(--main-color);
+color: white;
+border: 2px solid var(--main-color);
+padding: 0.3rem 1rem 1.8rem 1rem;
+border:none;
+font-weight: bold;
+font-size: 1rem;
+transition: 0.6s;
+letter-spacing: 0.2rem;
+}
+
+#contact form fieldset div:nth-child(4) input:hover {
+background-color: white;
+color: var(--main-color);
+border: 2px solid var(--main-color);
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+header {
+    position: fixed;
+    z-index: 100;
+    padding: 0.3rem;
+    height: 4rem;
+}
+
+header .logo img {
+    width: 7rem;
+    height: 3rem;
+}
+
+
+header nav {
+    background-color: transparent;
+    background-image: none;
+}
+
+header .nav-link {
+    margin: 0rem 1.5rem 0 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header .nav-link:hover {
+    transform: scale(1.1);
+}
+
+header #menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 4vh;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    border-top: none;
+    background-color: transparent;
+}
+
+
+#contact {
+    margin-bottom: 12rem;
+}
+
+#contact article .contact-body {
+    margin-top: 8rem;
+}
+
+
+#contact article div div:first-child h6 {
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 3rem;
+    font-weight: bold
+}
+
+#contact article div div:first-child p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+#contact article div  div:first-child span {
+   color: var(--main-color);
+   font-weight: bold;
+}
+
+#contact img {
+   width: 35vw;
+   margin: 3rem 0;
+}
+
+#contact form {
+margin-top: 4rem;
+ padding: 2rem 4rem 2rem 4rem;
+ box-shadow: 4px 4px 4px rgb(228, 228, 228);
+}
+
+#contact form fieldset label {
+font-size: 0.8rem;
+color:black;
+margin-bottom: 0.5rem;
+}
+
+#contact form fieldset div:first-child div input {
+background-color: rgba(255, 140, 0, 0.1);
+border-radius: 4px;
+border: none;
+width: 15rem;
+height: 1.8rem;
+}
+
+#contact form fieldset input {
+height: 1.8rem;
+width: 31rem;
+background-color: rgba(255, 140, 0, 0.1);
+border-radius: 4px;
+border: none;
+}
+
+
+#contact form fieldset textarea {
+ border: 1px solid lightgray;
+background-color: rgba(255, 140, 0, 0.1);
+border-radius: 6px;
+height: 8rem;
+width: 31rem;
+border: none;
+resize: none;
+}
+
+#contact form fieldset div:nth-child(4) input {
+background-color: var(--main-color);
+color: white;
+border: 2.5px solid var(--main-color);
+border-radius: 25px;
+padding: 0.3rem 1.5rem 2.3rem 1.5rem;
+font-size: 1.2rem;
+letter-spacing: 0.2rem;
+transition: 0.5s;
+}
+
+#contact form fieldset div:nth-child(4) input:hover {
+background-color: white;
+color: var(--main-color);
+border: 2.5px solid var(--main-color);
+}
+
+}

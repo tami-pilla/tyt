@@ -1,0 +1,162 @@
+<header class="container-fluid shadow-sm">
+
+    <div class="row d-flex" id="header">
+
+        <div class="col-5 col-lg-4 d-flex justify-content-lg-center align-items-center">
+            <a class="logo d-flex align-items-center" routerLink="/home">
+                <img src="/assets/images/logo-header2a.png">
+            </a>
+        </div>
+
+        <div class="col-7  d-flex justify-content-end  align-items-center d-lg-none">
+            <a class="btn-menu text-decoration-none" role="button" id="btn-abrir-menu" (click)="toggleMenu()">
+              <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewBox="0 0 32 32" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M13,16c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,14.346,13,16z" id="XMLID_294_" />
+                <path d="M13,26c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,24.346,13,26z" id="XMLID_295_" />
+                <path d="M13,6c0,1.654,1.346,3,3,3s3-1.346,3-3s-1.346-3-3-3S13,4.346,13,6z" id="XMLID_297_" />
+              </svg>
+            </a>
+          </div> 
+
+
+        <nav class="col-12 col-lg-8  d-flex flex-column d-lg-flex flex-lg-row  justify-content-lg-center  align-items-lg-center">
+            <ul class="nav font-2  d-lg-flex flex-lg-row" [class.menu-show]="openMenu"  id="menu">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">HOME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-decoration-none" routerLink='/services'>SERVICES</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink='/make-order'>MAKE YOUR ORDER</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contact">CONTACT</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link">WORK WITH US</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">COMMUNITY</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+
+</header>
+
+<section class="container-fluid" id="work-w-us">
+
+    <article class="row  d-flex flex-column justify-content-center align-items-center">
+
+        <div class="col-11 col-lg-5 d-flex flex-column justify-content-center align-items-center work-w-us-body">
+
+            <div class="d-flex flex-column align-items-center">
+                <h6 class="font-1">WORK WITH US</h6>
+
+                <p class="text-center font-2">If you want to be part of our <span>team,</span> please complete the
+                    following
+                    form and we'll get in touch</p>
+
+                    <img class="shadow" src="/assets/images/traduccion-tec2.jpg">
+            </div>
+
+
+            <form action="" method="POST" class="work-w-us-form font-2">
+                <fieldset>
+
+                    <div class="d-flex flex-column flex-lg-row mt-2 mt-lg-0">
+                        <div class="d-flex flex-column me-lg-3 ">
+                            <label for="name-work" class="fw-bold">Name:</label>
+                            <input type="text" id="name-work" required>
+                        </div>
+
+                        <div class="d-flex flex-column mt-3 mt-lg-0">
+                            <label for="age-work" class="fw-bold">Age:</label>
+                            <input type="text" id="age-work" required>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex flex-column mt-3 mt-lg-4">
+                        <label for="email-work" class="fw-bold">E-mail:</label>
+                        <input type="email" id="email-work" required>
+                    </div>
+
+
+                    <div class="mt-5 mt-lg-5">
+                        <legend class="fw-bold font-1 mb-lg-3">What languages do you work with?</legend>
+
+                        <div class="d-flex align-items-center">
+
+                            <div class="d-flex flex-column ms-2 ms-lg-3">
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" id="english" name="languages-work" value="english">
+                                    <label for="english">English</label>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" id="spanish" name="languages-work" value="spanish">
+                                    <label for="spanish" class="mt-2 mt-lg-0">Spanish</label>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" id="french" name="languages-work" value="french">
+                                    <label for="french" class="mt-2 mt-lg-0">French</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column ms-5 ms-lg-5">
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" id="deutsch" name="languages-work" value="deutsch">
+                                    <label for="deutsch" class="mt-2 mt-lg-0">Deutsch</label>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" id="italian" name="languages-work" value="italian">
+                                    <label for="italian" class="mt-2 mt-lg-0">Italian</label>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <input type="checkbox" id="portuguese" name="languages-work" value="portuguese">
+                                    <label for="portuguese" class="mt-2 mt-lg-0">Portuguese</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mt-4 mt-lg-2">
+                        <input type="file" id="uploadFile" name="cv-name" required hidden>
+                        <label for="uploadFile" class="cv-file fw-bold shadow-sm mt-lg-3 font-1 rounded-pill">Upload your
+                            CV
+                        </label>
+                        <span id="chosenFile" class="font-1">No file chosen</span>
+                    </div>
+
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <input type="submit" id="submit-work" class="shadow font-1" value="Send">
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+
+    </article>
+</section>
+
+
+<app-footer></app-footer>
